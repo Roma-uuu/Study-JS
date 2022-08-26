@@ -332,18 +332,32 @@
 
 
 // Место для первой задачи
-function getTimeFromMinutes(numberOfMinutes) {
-    if (numberOfMinutes !== 'number' || numberOfMinutes === 'boolean' || numberOfMinutes < 0 ) {
-        return 'Ошибка, проверьте данные';
-    }
-    if (Number.isInteger(numberOfMinutes)) {
-        for (let i = 0; i <= 600; i + 60) {
-            if (numberOfMinutes <= i) {
-                Math.ceil(i / 60)
-                return 'Это 2 часа и 30 минут'
-            }
-        }
-    }
-}
-getTimeFromMinutes(550);
-console.log(getTimeFromMinutes());
+// function getTimeFromMinutes(numberOfMinutes) {
+//     if (numberOfMinutes !== 'number' || numberOfMinutes === 'boolean' || numberOfMinutes < 0 ) {
+//         return 'Ошибка, проверьте данные';
+//     }
+//     if (Number.isInteger(numberOfMinutes)) {
+//         for (let i = 0; i <= 600; i + 60) {
+//             if (numberOfMinutes <= i) {
+//                 Math.ceil(i / 60)
+//                 return 'Это 2 часа и 30 минут'
+//             }
+//         }
+//     }
+// }
+// getTimeFromMinutes(550);
+// console.log(getTimeFromMinutes());
+
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    ok: true,
+};
+
+console.log(Object.keys(options).length);
